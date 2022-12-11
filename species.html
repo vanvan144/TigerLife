@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger Species</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/68076a1572.js" crossorigin="anonymous"></script>
+
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Pacifico');
+         @import url('https://fonts.googleapis.com/css?family=Antonio');
+         @import url('https://fonts.googleapis.com/css?family=Anybody');
+
+        * {
+            box-sizing: border-box;
+        }
+        .nav-header {
+            background:#FFA500;
+            height:100px;
+            display:flex; 
+            
+
+        }
+        .nav-div{
+            margin:auto;
+            display:flex;
+            
+        }
+        .nav-bar {
+            list-style-type:none;
+            display:flex;
+            margin-left: 200px;
+            margin-top:30px;
+            
+          
+            
+        }
+        .nav-bar-link {
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            margin-right: 18px;
+            font-family: "Antonio", serif;
+            text-decoration: none;
+           
+           
+
+        }
+
+        .main-header {
+            background:url(imgs/tiger-laying.jpg) no-repeat center;
+            padding-top: 200px;
+         height: 850px;
+         background-size: cover;
+        }
+        .main-header-title {
+            color:white;
+            font-family: "Pacifico", serif;
+            text-shadow:2px 3px black;
+            font-size: 50px;
+            text-align: center;
+           margin-top:200px; 
+        }
+        .website-title {
+            font-family: "Pacifico", serif;
+            font-size: 39px;
+           margin-left:40px;
+           font-weight: 300;
+           text-shadow:2px 2px white;
+        }
+        body {
+            margin:0;
+            text-align:center;
+            background-color: #FFFACD;
+        }
+    
+        
+         h2 {
+            font-family: "Pacifico", sans-serif;
+            font-size: 60px;
+            color: orange;
+            text-shadow: 2px 4px black;
+         }
+         .w3-card-2 {
+            margin:30px;
+            font-family:"Anybody", serif;
+            font-size:23px;
+            background:#ffcc80;
+            
+           
+         }
+         .fa-circle-exclamation {
+            font-size: 30px;
+         }
+         img {
+            width:300px;
+            
+         }
+         h3 {
+            font-family: "Anybody", "sans-serif";
+            text-align: left;
+            font-size:30px;
+         }
+         .siberian-info {
+            font-size: 15px;
+         }
+         .fa-solid {
+            color:black;
+         }
+         .main-text { 
+            font-size:25px;
+            font-family: "Antonio", sans-serif;
+            margin:50px;
+         }
+       
+         
+         .bengal-info {
+            font-size: 15px;
+            text-align:center;
+         }
+         .row1 {
+                margin: 0 -3px;
+               
+                
+            }
+            .row1:after {
+             content: "";
+                display: table;
+                clear: both;
+            }
+            .row2 {
+                margin: 0 -3px;
+                
+            }
+            .row2:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .row3 {
+                margin: 0 -3px;
+                
+            }
+            .row3:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .box {
+                display:inline-block
+            }
+
+            
+        
+         .nav-bar-link:hover {
+            background:#FFC300;
+            max-width: fit-content;
+         }
+         .indochinese-info {
+            font-size:15px;
+         }
+         .malayan-info {
+            font-size:15px;
+         }
+         
+         .south-china-info {
+            font-size:15px;
+         }
+         .sumatran-info {
+            font-size: 15px;
+         }
+         
+         .caspian-info {
+            font-size:15px;
+         }
+         .bali-info {
+            font-size:15px;
+         }
+         .javan-info {
+            font-size:15px;
+         }
+         
+         .sources {
+            font-family: "Antonio", sans-serif;
+            
+         }
+         
+            
+
+        @media only screen and (max-width:500px) {
+           
+           .w3-card-2 {
+                margin-left:23px;
+            }
+            .w3-bar {
+                font-family: "Antonio", sans-serif;
+               font-size:25px;
+            }
+            
+            
+            
+           
+        }
+            
+         
+        
+         
+         
+         
+
+    </style>
+</head>
+    <body>
+        <!-- All pictures are from Pixabay unless credited -->
+        <!-- Small Screen Nav Bar -->
+    <div class=" w3-hide-large">
+        <div class="w3-bar w3-orange ">
+            <div class="w3-dropdown-hover w3-hide-large">
+                <button onclick="myFunction()" class="w3-padding-large w3-button w3-amber" title="paw"><i class="fa-solid fa-paw"></i></button>
+                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-khaki w3-animate-zoom">
+                    <a href="about-me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">About Me</a>
+                    <a href="species.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Species</a>
+                    <a href="facts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Facts</a>
+                    <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Donate</a>
+                    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Contact</a>
+                </div>
+            </div> 
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Home</a>
+        </div>
+    </div>
+    <!-- Large Screen Nav Bar -->
+    <div class="w3-hide-small">
+        <div class="nav-header">
+            <h1 class="website-title">TigerLife </h1>
+            <div class="nav-div">
+                <ul class="nav-bar">
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="index.html">Home</a></li>
+                    <li class="nav-bar-list"><a class= "nav-bar-link" href="about-me.html">About Me</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="species.html">Species</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="facts.html">Facts</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="donate.html">Donate</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     <h2>Species of Tigers<i class="fa-solid fa-paw"></i></h2>
+        <p class="main-text" >There are 9 known species of tigers as of 2022. 3 of them are unfortunately extinct. Each species is categorized with <i class="fa-solid fa-circle-exclamation"></i> = endangered , <i class="fa-solid fa-triangle-exclamation"></i> = critically endangered and <i class="fa-solid fa-skull-crossbones"></i> = extinct. Enjoy learning about these unique species!</p>
+        
+
+        <!-- First Row of Species -->
+        <div class="box">
+            <div class="row1">
+                <div class="w3-third w3-hide-small ">
+                    <div class="w3-panel w3-card-2 w3-hover-shadow w3-animate-left ">
+                        <p>Siberian Tiger  <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <img class="w3-round-xlarge" src="imgs/siberian-tiger.jpg" alt="siberian tiger pic">
+                     <p class="siberian-info">
+                     <strong>Other names:</strong> Korean Tiger, Manchurian Tiger, etc. <br> <strong>Status:</strong> Endangered <br> <strong>Location:</strong> North Asia <br> Siberian Tigers are known for being the largest of the species. They can even take down bears. They also tend to live in colder climates which correlates with their paler fur. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-third w3-hide-small ">
+                    <div class="w3-panel w3-card-2 w3-hover-shadow w3-animate-top ">
+                        <p>Bengal Tiger  <i class="fa-solid fa-circle-exclamation"></i></p>
+                     <img class="w3-round-xlarge" src="imgs/bengal-tiger.jpg" alt="bengal tiger pic">
+                     <p class="bengal-info">
+                        <strong>Other names:</strong> Royal Bengal Tiger or Indian Tiger <br> <strong>Status:</strong> Endangered <br> <strong>Location:</strong> India, Bangladesh and Nepal <br> Bengal Tigers are one of the famous species of tigers that everyone is familiar with. Some of them are born with a mutation causing white fur and blue eyes. Bengal tigers are also one of the oldest species meaning they've been around for about 12,000 years.
+                     </p>
+                    </div>
+                </div>
+                <div class="w3-third w3-hide-small">
+                    <div class="w3-panel w3-card-2 w3-hover-shadow w3-animate-right  "> 
+                        <p>Indochinese Tiger <i class="fa-solid fa-triangle-exclamation"></i></p>
+                        <img class="w3-round-xlarge" src="imgs/indochinese-tiger.jpg" alt="indochinese tiger">
+                        <p class="w3-small"> Image from <a href="https://www.worldwildlife.org/photos/indochinese_tiger_8-9-2012_hero_and_circle_mid_243238-jpg" target="_blank">WWF</a> by Connie Lemperle/ WWF Greater Mekong. </p>
+                        <p class="indochinese-info">
+                        <strong>Other name:</strong> Corbett's Tiger <br> <strong>Status:</strong> Near Critically Endangered <br> <strong>Location:</strong> Southeast Asia <br> This species is "critically endangered" and there are about 300-400 left. Unfortunately, the reason is because of illegal trade for things like medicine or jewelry. Its claws and bones are also used to make pastes. . 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <!-- Second Row of Species -->
+        
+            <div class="row2">
+                <div class="w3-third w3-hide-small">
+                    <div class="w3-panel w3-card-2 w3-hover-shadow w3-animate-left ">
+                        <p>Malayan Tiger <i class="fa-solid fa-triangle-exclamation"></i></p>
+                        <img class="w3-round-xlarge" src="imgs/malayan-tiger.jpg" alt="malayan tiger">
+                     <p class="malayan-info">
+                        <strong>Other names:</strong> Southern Indochinese Tiger <br> <strong>Status:</strong> Critically Endangered <br> <strong>Location:</strong> Southeast Asia <br> This species is very similar to the Indochinese species that it was not a separate species till the 2000s. Deforestation and killing are the main causes of it being critically endangered. There is a smaller population than the Indochinese tigers, resulting in its critically endangered state.
+                        </p>
+                    </div>
+                </div>
+            
+        
+                <div class="w3-third w3-hide-small">
+                    <div class="w3-panel w3-card-2 w3-hover-shadow w3-animate-top  ">
+                        <p>South China Tiger <i class="fa-solid fa-triangle-exclamation"></i></p>
+                        <img class="w3-round-xlarge" src="imgs/south-china-tiger.jpg" alt="south china tiger">
+                        <p class="w3-small">Image from <a href="https://news.cgtn.com/news/3d3d414f334d444e33457a6333566d54/index.html" target="_blank">CGTN</a> by VCG Photo.</p>
+                        <p class="south-china-info">
+                        <strong>Other names:</strong> Amoy Tiger, Xiamen Tiger, and Chinese Tiger <br> <strong>Status:</strong> Critically Endangered/Near Extinction <br> <strong>Location:</strong> Central/Eastern China <br> There is said to have been blue or white mutations of this species that had been spotted like the Bengal species.This species is also extremely endangered as there are 30-40 of them left in the world. The reason is extermination from the Chinese government in the late '90s.'
+                     </p>
+                    </div>
+                </div>
+                <div class="w3-third w3-hide-small">
+                    <div class="w3-panel w3-card-2 w3-hover-shadow w3-animate-right ">
+                        <p>Sumatran Tiger <i class="fa-solid fa-triangle-exclamation"></i></p>
+                        <img class="w3-round-xlarge" src="imgs/sumatran-tiger.jpg" alt="sumatran tiger">
+                        <p class="sumatran-info">
+                        <strong>Other names:</strong> None <br> <strong>Status:</strong> Critically Endangered <br> <strong>Location:</strong> Indonesia <br> They mainly live on the Indonesian island of Sumatra and were separate from the other species for thousands of years. They are on the smaller side compared to the other species and have darker stripes that span their whole body. Also, they are the only living species in Indonesia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+          <!-- Third Row of Species -->
+        
+            <div class="row3">
+                
+                <div class="w3-third w3-hide-small">
+                    <div class="w3-panel w3-card-2 w3-hover-shadow w3-animate-left">
+                        <p>Javan Tiger<i class="fa-solid fa-skull-crossbones"></i></p>
+                        <img class="w3-round-xlarge" src="imgs/javan-tiger.jpg" alt="javan tiger">
+                        <p class="w3-small">Image from <a href="https://en.wikipedia.org/wiki/Javan_tiger" target="_blank">Wikipedia</a> taken in 1938 at Ujung Kulon.</p>
+                        <p class="javan-info">
+                        <strong>Other names:</strong> None <br> <strong>Status:</strong> Extinct (possibly?) <br> <strong>Location:</strong> Indonesia <br> Like the Sumatran and Bali Tigers, Javan Tigers inhabited Indonesia. Unfortunately, it went extinct in the 70s, so there are not a lot of information about it. However, there have been sightings of the species in the area over the last 10-15 years. There aren't confirmations if they are in hiding or if they have been wiped out. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-hide-small">
+                    <div class="w3-panel w3-card-2 w3-hover-shadow w3-animate-bottom ">
+                        <p>Caspian Tiger<i class="fa-solid fa-skull-crossbones"></i></p>
+                        <img class="w3-round-xlarge" src="imgs/caspian-tiger.jpg" alt="caspian tiger">
+                        <p class="w3-small">Image from <a href="https://www.sciencealert.com/scientists-have-a-plan-to-bring-back-the-caspian-tiger-which-went-extinct-50-years-ago" target="_blank">Science Alert</a> by the Berlin Zoo, c.1899.</p>
+                        <p class="caspian-info">
+                        <strong>Other names:</strong> Hyrcanian Tiger, Hyrcan Tiger, or Turan Tiger <br> <strong>Status:</strong> Extinct <br> <strong>Location:</strong> Central Asia and Middle east <br> They lived near the Caspian Sea, hence the "Caspian" name. Caspian Tigers have unfortunately been extinct for decades with none left in the wild or captivity. In their existence, they had huge skulls and huge bodies meaning they were powerful animals. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-hide-small">
+                    <div class="w3-panel w3-card-2 w3-hover-shadow w3-animate-right ">
+                        <p>Bali Tiger<i class="fa-solid fa-skull-crossbones"></i></p>
+                        <img class="w3-round-xlarge" src="imgs/Bali-tiger.jpg" alt="caspian tiger" style="width:60%">
+                        <p class="w3-small">Image from <a href="https://en.wikipedia.org/wiki/Bali_tiger" target="_blank">Wikipedia</a> by the Ringling Bros. c. 1915</p>
+                        <p class="bali-info">
+                        <strong>Other names:</strong> None <br> <strong>Status:</strong> Extinct <br> <strong>Location:</strong> Indonesia <br> Like the Sumatran Tiger, it lived in Indonesia too. It has not been seen since the 1930's and was labeled extincted 20 years later. It was said to be the smallest species of all the tiger species in size. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Small Screen First Row Cards -->
+        <div class="w3-hide-large w3-panel w3-card-2 w3-hover-shadow w3-animate-left">
+            <p>Siberian Tiger  <i class="fa-solid fa-circle-exclamation"></i></p>
+            <img class="w3-hover-sepia w3-round-xlarge" src="imgs/siberian-tiger.jpg" alt="siberian tiger pic" style="width:80%">
+            <p class="w3-medium"><strong>Other names:</strong> Korean Tiger, Manchurian Tiger, etc. <br> <strong>Status:</strong> Endangered <br> <strong>Location:</strong> North Asia <br> Siberian Tigers are known for being the largest of the species. They can even take down bears. They also tend to live in colder climates which correlates with their paler fur. </p>
+        </div>
+
+        <div class="w3-hide-large w3-panel w3-card-2 w3-hover-shadow w3-animate-left">
+            <p>Bengal Tiger  <i class="fa-solid fa-circle-exclamation"></i></p>
+            <img class="w3-round-xlarge w3-hover-sepia" src="imgs/bengal-tiger.jpg" alt="bengal tiger pic" style="width:90%">
+            <p class="w3-medium"><strong>Other names:</strong> Royal Bengal Tiger or Indian Tiger <br> <strong>Status:</strong> Endangered <br> <strong>Location:</strong> India, Bangladesh and Nepal <br> Bengal Tigers are one of the famous species of tigers that everyone is familiar with. Some of them are born with a mutation causing white fur and blue eyes. Bengal tigers are also one of the oldest species meaning they've been around for about 12,000 years.</p>
+        </div>
+
+        <div class="w3-hide-large w3-panel w3-card-2 w3-hover-shadow w3-animate-left">
+            <p>Indochinese Tiger <i class="fa-solid fa-triangle-exclamation"></i></p>
+            <img class="w3-round-xlarge w3-hover-sepia" src="imgs/indochinese-tiger.jpg" alt="indochinese tiger" style="width:90%">
+            <p class="w3-small">Image from <a href="https://news.cgtn.com/news/3d3d414f334d444e33457a6333566d54/index.html" target="_blank">CGTN</a> by VCG Photo.</p>
+            <p class="w3-medium"> <strong>Other name:</strong> Corbett's Tiger <br> <strong>Status:</strong> Near Critically Endangered <br> <strong>Location:</strong> Southeast Asia <br> This species is "critically endangered" and there are about 300-400 left. Unfortunately, the reason is because of illegal trade for things like medicine or jewelry. Its claws and bones are also used to make pastes. </p>
+        </div>
+        <!-- Small Screen Second Row Cards  -->
+        <div class="w3-hide-large w3-panel w3-card-2 w3-hover-shadow w3-animate-left">
+            <p>Malayan Tiger <i class="fa-solid fa-triangle-exclamation"></i></p>
+            <img class="w3-round-xlarge w3-hover-sepia" src="imgs/malayan-tiger.jpg" alt="malayan tiger" style="width:80%">
+            <p class="w3-medium"><strong>Other names:</strong> Southern Indochinese Tiger <br> <strong>Status:</strong> Critically Endangered <br> <strong>Location:</strong> Southeast Asia <br> This species is very similar to the Indochinese species that it was not a separate species till the 2000s. Deforestation and killing are the main causes of it being critically endangered. There is a smaller population than the Indochinese tigers, resulting in its critically endangered state.</p>
+        </div>
+
+        <div class="w3-hide-large w3-panel w3-card-2 w3-hover-shadow w3-animate-left">
+            <p>South China Tiger <i class="fa-solid fa-triangle-exclamation"></i></p>
+            <img class="w3-round-xlarge w3-hover-sepia" src="imgs/south-china-tiger.jpg" alt="south china tiger" style="width:80%">
+         <p class="w3-small">Image from <a href="https://news.cgtn.com/news/3d3d414f334d444e33457a6333566d54/index.html" target="_blank">CGTN</a> by VCG Photo.</p>
+         <p class="w3-medium"><strong>Other names:</strong> Amoy Tiger, Xiamen Tiger, and Chinese Tiger <br> <strong>Status:</strong> Critically Endangered/Near Extinction <br> <strong>Location:</strong> Central/Eastern China <br> There is said to have been blue or white mutations of this species that had been spotted like the Bengal species.This species is also extremely endangered as there are 30-40 of them left in the world. The reason is extermination from the Chinese government in the late '90s.</p>
+        </div>
+
+        <div class="w3-hide-large w3-panel w3-card-2 w3-hover-shadow w3-animate-left">
+            <p>Sumatran Tiger <i class="fa-solid fa-triangle-exclamation"></i></p>
+            <img class="w3-round-xlarge w3-hover-sepia" src="imgs/sumatran-tiger.jpg" alt="sumatran tiger" style="width:80%">
+            <p class="w3-medium"><strong>Other names:</strong> None <br> <strong>Status:</strong> Critically Endangered <br> <strong>Location:</strong> Indonesia <br> They mainly live on the Indonesian island of Sumatra and were separate from the other species for thousands of years. They are on the smaller side compared to the other species and have darker stripes that span their whole body. Also, they are the only living species in Indonesia.</p>
+        </div>
+
+        <!-- Small Screen Third Row -->
+        <div class="w3-hide-large w3-panel w3-card-2 w3-hover-shadow w3-animate-left">
+            <p>Javan Tiger<i class="fa-solid fa-skull-crossbones"></i></p>
+            <img class="w3-round-xlarge w3-hover-sepia" src="imgs/javan-tiger.jpg" alt="javan tiger" style="width:80%">
+            <p class="w3-small">Image from <a href="https://en.wikipedia.org/wiki/Javan_tiger" target="_blank">Wikipedia</a> taken in 1938 at Ujung Kulon.</p>
+            <p class="w3-medium"><strong>Other names:</strong> None <br> <strong>Status:</strong> Extinct (possibly?) <br> <strong>Location:</strong> Indonesia <br> Like the Sumatran and Bali Tigers, Javan Tigers inhabited Indonesia. Unfortunately, it went extinct in the 70s, so there are not a lot of information about it. However, there have been sightings of the species in the area over the last 10-15 years. There aren't confirmations if they are in hiding or if they have been wiped out. </p>
+        </div>
+
+        <div class="w3-hide-large w3-panel w3-card-2 w3-hover-shadow w3-animate-left">
+            <p>Caspian Tiger<i class="fa-solid fa-skull-crossbones"></i></p>
+            <img class="w3-round-xlarge w3-hover-sepia" src="imgs/caspian-tiger.jpg" alt="caspian tiger" style="width:80%">
+            <p class="w3-small">Image from <a href="https://www.sciencealert.com/scientists-have-a-plan-to-bring-back-the-caspian-tiger-which-went-extinct-50-years-ago" target="_blank">Science Alert</a> by the Berlin Zoo, c.1899.</p>
+            <p class="w3-medium"><strong>Other names:</strong> Hyrcanian Tiger, Hyrcan Tiger, or Turan Tiger <br> <strong>Status:</strong> Extinct <br> <strong>Location:</strong> Central Asia and Middle east <br> They lived near the Caspian Sea, hence the "Caspian" name. Caspian Tigers have unfortunately been extinct for decades with none left in the wild or captivity. In their existence, they had huge skulls and huge bodies meaning they were powerful animals. </p>
+        </div>
+
+        <div class="w3-hide-large w3-panel w3-card-2 w3-hover-shadow w3-animate-left">
+            <p>Bali Tiger<i class="fa-solid fa-skull-crossbones"></i></p>
+            <img class="w3-round-xlarge w3-hover-sepia" src="imgs/Bali-tiger.jpg" alt="caspian tiger" style="width:70%">
+            <p class="w3-small">Image from <a href="https://en.wikipedia.org/wiki/Bali_tiger" target="_blank">Wikipedia</a> by the Ringling Bros. c. 1915</p>
+            <p class="w3-medium"><strong>Other names:</strong> None <br> <strong>Status:</strong> Extinct <br> <strong>Location:</strong> Indonesia <br> Like the Sumatran Tiger, it lived in Indonesia too. It has not been seen since the 1930's and was labeled extincted 20 years later. It was said to be the smallest species of all the tiger species in size. </p>
+        </div>
+        <div class="sources">
+            <p><strong>Sources:</strong></p>
+            <p>Haines, Dena. “9 Types of Tigers: Guide to All Subspecies (Size, Population, Illegal Trade).” Storyteller Travel, 17 Oct. 2022, https://storyteller.travel/types-of-tigers/.  </p>
+        </div>
+         <!-- Nav Bar Animation -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Demo");
+            if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            } else { 
+            x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    </body>
+</html>

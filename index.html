@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TigerLife</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/68076a1572.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--images from Pixabay-->
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Pacifico');
+         @import url('https://fonts.googleapis.com/css?family=Antonio');
+         @import url('https://fonts.googleapis.com/css?family=Anybody');
+
+        * {
+            box-sizing: border-box;
+        }
+        .nav-header {
+            background:#FFA500;
+            height:100px;
+            display:flex; 
+            
+
+        }
+        .nav-div{
+            margin:auto;
+            display:flex;
+            justify-content: center;
+        }
+        .nav-bar {
+            list-style-type:none;
+            display:flex;
+            margin-left: 200px;
+            margin-top:30px;
+            
+          
+            
+        }
+        .nav-bar-link {
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            margin-right: 18px;
+            font-family: "Antonio", serif;
+            text-decoration: none;
+           
+           
+
+        }
+
+        .main-header {
+            background:url(imgs/tiger-laying.jpg) no-repeat center;
+            padding-top: 200px;
+         height: 850px;
+         background-size: cover;
+        }
+        .main-header-title {
+            color:white;
+            font-family: "Pacifico", serif;
+            text-shadow:2px 3px black;
+            font-size: 50px;
+            text-align: center;
+           margin-top:200px; 
+        }
+        .website-title {
+            font-family: "Pacifico", serif;
+            font-size: 39px;
+           margin-left:40px;
+           font-weight: 300;
+           text-shadow:2px 2px white;
+        }
+        body {
+            margin:0;
+            text-align:center;
+            background-color: #FFFACD;
+        }
+        img {
+            width:100%
+        }
+        h3 {
+         font-family: "Antonio", serif;
+            font-size:50px;
+         color:#FFA500;
+        }
+         .introduction {
+            width: 60%;
+            font-size:27px;
+            margin:auto;
+            font-family:"Antonio", serif;
+            color: black;
+         }
+         .donate-button {
+            display:block; 
+            background-color:#D2691E;
+            width:100px;
+            margin:auto;
+            padding:14px;
+            font-size:25px;
+            color:white;
+            text-decoration: none;
+            border-radius:25px;
+            box-shadow:3px 3px gray;
+            
+         }
+         
+           
+
+         .donate-button:hover  {
+            background-color: #FFA500;
+         }
+         .nav-bar-link:hover {
+            background:#FFC300
+   
+         }
+            .row1 {
+                margin: 0 -3px;
+                
+            }
+            .row1:after {
+             content: "";
+                display: table;
+                clear: both;
+            }
+            .w3-card-2 {
+                box-shadow: 0 4px 8px 0 grey;    
+                padding: 16px;
+             text-align: center;
+             background-color: orange;
+             margin:15px;
+             font-family: "Anybody", sans-serif;
+            }
+            h4 {
+                font-family: "Antonio", sans-serif;
+                font-size:25px;
+            }
+            
+            .row2 {
+                margin: 0 -5px;
+            }
+            .row2:after {
+             content: "";
+                display: table;
+                clear:both;
+            }
+            .card2 {
+                box-shadow: 0 4px 8px 0 grey;    
+                padding: 16px;
+             text-align: center;
+             background-color: orange;
+             font-family: "Anybody", sans-serif;
+            }
+            .box {
+                display:inline-block;
+            
+                
+                
+            }
+            
+            
+           
+        @media only screen and (max-width:500px) {
+            .donate-button {
+                margin:auto;
+            }
+      
+            .main-header-title {
+                font-size:1.875em;
+                margin:5em;
+                margin-left:130px;
+                
+            }
+          
+            .w3-bar {
+                font-family: "Antonio", sans-serif;
+               font-size:25px;
+            }
+            
+            .introduction {
+                font-size: 20px;
+            }
+            
+          
+           
+            
+        }
+           
+
+           
+        
+         
+         
+         
+    </style>
+</head>
+
+
+<body>
+    <!-- Small Screen Nav Bar -->
+    <div class=" w3-hide-large">
+        <div class="w3-bar w3-orange ">
+            <div class="w3-dropdown-hover w3-hide-large">
+                <button onclick="myFunction()" class="w3-padding-large w3-button w3-amber" title="paw"><i class="fa-solid fa-paw"></i></button>
+                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-khaki w3-animate-zoom">
+                    <a href="about-me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">About Me</a>
+                    <a href="species.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Species</a>
+                    <a href="facts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Facts</a>
+                    <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Donate</a>
+                    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Contact</a>
+                </div>
+            </div> 
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Home</a>
+        </div>
+    </div>
+    <!-- Large Screen Nav Bar -->
+    <div class="w3-hide-small">
+        <div class="nav-header">
+            <h1 class="website-title">TigerLife </h1>
+            <div class="nav-div">
+                <ul class="nav-bar">
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="index.html">Home</a></li>
+                    <li class="nav-bar-list"><a class= "nav-bar-link" href="about-me.html">About Me</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="species.html">Species</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="facts.html">Facts</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="donate.html">Donate</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-header">
+        <h2 class="main-header-title">~Learn About the TigerLife~</h2>  
+
+    </div>
+
+    <h3>Welcome</h3>
+    <div class="introduction">
+    <p>Welcome to the TigerLife! The home website of all things tigers. Feel free to roam the website and you might just learn something new. Feel free to check out the Facts page and this <a href="https://www.youtube.com/watch?v=FK3dav4bA4s" target="_blank">National Geographic video</a> to learn more! These magnificent creatures are at risk of endangerment as well. Feel free to donate if you can. </p>
+    <a href="donate.html" class="donate-button">Donate</a>
+    </div>
+    <!--image from Pixabay-->
+        <div class="box">
+           
+               
+
+                <div class="row1">
+                   
+                    <div class="w3-third ">
+                        <div class="w3-panel w3-card-2 w3-amber">
+                            <img src="imgs/tiger-proud.jpg" alt="tiger proud" class="w3-medium">
+                            <h4>About the creator</h4>
+                            <p>Learn about the creator of this website and more about the purpose of this website.</p>
+                            <p><a href="about-me.html" target="_blank">Click here to learn more</a></p>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <div class="w3-panel w3-card-2 w3-amber">
+                            <img src="imgs/bengal-tiger.jpg" alt="tiger species">
+                         <h4>Tiger Species</h4>
+                         <p>There's a good amount of species around the world that are endangered/extinct at this very moment.</p>
+                            <p><a href="species.html" target="_blank">Click here to learn more </a></p>
+                        </div>
+                    </div>
+          
+                    <div class="w3-third  ">
+                        <div class="w3-panel w3-card-2 w3-amber ">
+                        <img src="imgs/tiger-showing-teeth.jpg" alt="tiger facts">
+                        <h4>Tiger Facts</h4>
+                        <p>Educate yourself with many interesting facts about tigers!</p>
+                     <p><a href="facts.html" target="_blank">Click here to learn more</a></p>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="row2">
+               
+            
+      
+                <div class="w3-third">
+                    <div class="w3-panel w3-card-2 w3-amber ">
+                        <img src="imgs/tiger-face.jpg" alt="tiger face">
+                        <h4>Contact Me</h4>
+                        <p>Contact information to reach out for questions, comments or concerns.</p>
+                        <p><a href="#" target="_blank">Click here to learn more</a></p>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-panel w3-card-2 w3-amber">
+                        <img src="imgs/tiger-with-human.jpg" alt="tiger with human">
+                        <h4>Donate</h4>
+                        <p>There are a variety of organization to donate to for tigers and wildlife. Please feel free to donate for the sake of tiger endangerment.</p>
+                        <p><a href="#" target="_blank">Click here to learn more</a></p>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-panel w3-card-2 w3-amber">
+                        <img src="imgs/tiger-laying.jpg" alt="tiger laying">
+                        <h4>Home</h4>
+                        <p>(This page) Homepage of the TigerLife website to learn about the basis of this website. </p>
+                        <p><a href="index.html" target="_blank">Click here to learn more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    <!-- Nav Bar Animation -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Demo");
+            if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            } else { 
+            x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+        
+
+</body>
+</html>

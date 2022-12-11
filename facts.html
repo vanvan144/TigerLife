@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/68076a1572.js" crossorigin="anonymous"></script>
+    <title>Tiger Facts</title>
+
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Pacifico');
+            @import url('https://fonts.googleapis.com/css?family=Antonio');
+            @import url('https://fonts.googleapis.com/css?family=Anybody');
+
+            * {
+            box-sizing: border-box;
+        }
+        .nav-header {
+            background:#FFA500;
+            height:100px;
+            display:flex; 
+            
+
+        }
+        .nav-div{
+            margin:auto;
+            display:flex;
+            justify-content: center;
+        }
+        .nav-bar {
+            list-style-type:none;
+            display:flex;
+            margin-left: 200px;
+            margin-top:30px;
+            
+          
+            
+        }
+        .nav-bar-link {
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            margin-right: 18px;
+            font-family: "Antonio", serif;
+            text-decoration: none;
+           
+           
+
+        }
+
+        .main-header {
+            background:url(imgs/tiger-laying.jpg) no-repeat center;
+            padding-top: 200px;
+         height: 850px;
+         background-size: cover;
+        }
+        .main-header-title {
+            color:white;
+            font-family: "Pacifico", serif;
+            text-shadow:2px 2px black;
+            font-size: 50px;
+            text-align: center;
+           margin-top:200px; 
+        }
+        .website-title {
+            font-family: "Pacifico", serif;
+            font-size: 39px;
+           margin-left:40px;
+           font-weight: 300;
+           text-shadow:2px 2px white;
+        }
+        body {
+            margin:0;
+            text-align:center;
+            background-color: #FFFACD;
+        }
+        .nav-bar-link:hover {
+            background:#FFC300;
+            max-width: fit-content;
+         }
+         h2 {
+            font-family:"Pacifico", sans-serif;
+            font-size:55px;
+            color:orange;
+            text-shadow: 2px 4px black;
+         }
+         .facts {
+            font-family:"Antonio", sans-serif;
+            padding-right:100px;
+            padding-left:100px;
+
+         }
+         .intro {
+            font-family: "Antonio", sans-serif;
+            font-size:25px;
+         }
+         h3 {
+            font-family : "Antonio", sans-serif;
+            font-size:40px;
+         }
+         .pattern-info {
+            font-size:25px;
+            font-family: "Anybody", sans-serif;
+         }
+         .Sanitize-info {
+            font-size:25px;
+            font-family: "Anybody", sans-serif;
+         }
+         .diet-info {
+            font-size:25px;
+            font-family: "Anybody", sans-serif;
+         }
+         .cub-info {
+            font-size:25px;
+            font-family: "Anybody", sans-serif;
+         }
+         .scent-info {
+            font-size:25px;
+            font-family: "Anybody", sans-serif;
+         }
+         .sources {
+            font-family: "Antonio", sans-serif;
+         }
+         i {
+            color:black;
+         }
+         @media only screen and (max-width:500px) {
+            .w3-bar {
+                font-family: "Antonio", sans-serif;
+               font-size:25px;
+            }
+            
+          .intro {
+            font-size:17px;
+            
+          }
+          .pattern-info {
+            font-size:15px;
+          }
+          .sources {
+            font-size:10px;
+          }
+         }
+            
+           
+        
+
+        
+        
+         
+         
+    
+        
+    </style>
+</head>
+<body>
+    <!-- Small Screen Nav Bar -->
+    <div class=" w3-hide-large">
+        <div class="w3-bar w3-orange ">
+            <div class="w3-dropdown-hover w3-hide-large">
+                <button onclick="myFunction()" class="w3-padding-large w3-button w3-amber" title="paw"><i class="fa-solid fa-paw"></i></button>
+                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-khaki w3-animate-zoom">
+                    <a href="about-me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">About Me</a>
+                    <a href="species.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Species</a>
+                    <a href="facts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Facts</a>
+                    <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Donate</a>
+                    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Contact</a>
+                </div>
+            </div> 
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Home</a>
+        </div>
+    </div>
+    <!-- Large Screen Nav Bar -->
+    <div class="w3-hide-small">
+        <div class="nav-header">
+            <h1 class="website-title">TigerLife </h1>
+            <div class="nav-div">
+                <ul class="nav-bar">
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="index.html">Home</a></li>
+                    <li class="nav-bar-list"><a class= "nav-bar-link" href="about-me.html">About Me</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="species.html">Species</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="facts.html">Facts</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="donate.html">Donate</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- All Photos from Pixabay unless credited -->
+    <h2>Tiger Facts <i class="fa-solid fa-paw"></i></h2>
+    <p class="intro">Tigers have so many wonderful aspects about their lives and features that everyone should know more about them. This page is where you get to learn many wonderful, fascinating information and facts about tigers. If you wanna learn more, there is a handy <a href="https://www.youtube.com/watch?v=8OmRW4em_vA" target="_blank">Nat Geo Kids Video</a> on some tiger facts! </p>
+        <div class="facts">
+            <div class= "w3-panel w3-card-2 w3-yellow w3-hover-shadow w3-hide-small">
+              <h3 class="w3-center ">-Patterned skin-</h3>
+              <img src=imgs/tiger-skin.jpg alt="tiger skin"  style="width:30%" class="w3-hover-sepia ">
+              <p class="w3-small">Image from <a href="https://twitter.com/dallaszoo/status/359783752915877889">Twitter</a> from the Dallas Zoo.</p>
+              <p class="pattern-info"> It is quite obvious that tigers have vibrant orange fur with black, slender stripes. However, did you know that their pattern is imprinted onto their skin as well? It's almost like a human's fingerprint which marks who they are. (Imagine being born with a "tattoo")</p>
+            </div>
+            <div class= "w3-panel w3-card-2 w3-yellow w3-hover-shadow w3-hide-small">
+                <h3 class= "w3-center"> -Sanitizing Saliva-</h3>
+                <img src="imgs/tiger-mouthopening.jpg" style="width:30%" alt="tiger with mouth open" class="w3-hover-sepia ">
+                <p class="Sanitize-info">Something I found very fascinating about tigers is the fact they have antiseptic saliva. You read that right. Their saliva is almost like a disinfectant preventing the spread of bacteria. They usually lick themselves to prevent infection which is almost like healing powers in my opinion. </p>
+            </div>
+            <div class= "w3-panel w3-card-2 w3-yellow w3-hover-shadow w3-hide-small">
+                <h3 class="w3-center">-Variety Diet-</h3>
+                <img src="imgs/tiger-eating.jpg" alt="tiger eating" class="w3-hover-sepia" style="width:40%">
+                <p class="diet-info">
+                Tigers are known to eat just about ANY animal. It does not matter if it's a bird, rhino, buffalo, or even another large wildcat. If they get in the tigers way, they will become deadmeat. (Literally)
+                </p>
+            </div>
+            <div class= "w3-panel w3-card-2 w3-yellow w3-hover-shadow w3-hide-small">
+                <h3 class="w3-center">-Vulnerable Little Cubs-</h3>
+                <img src="imgs/tiger-cub-withtiger.jpg" class="w3-hover-sepia" alt="tiger cub with parent" style="width:40%">
+                <p class="cub-info">
+                    Unfortunately, all tiger cubs are born blind. Because of this, there are many cubs that do not survive. They are mainly relying on the scent of their mother to guide them but might end up dying of starvation or eaten by a male tiger for mating with the female. (Poor things!)
+                </p>
+            </div>
+            <div class= "w3-panel w3-card-2 w3-yellow w3-hover-shadow w3-hide-small">
+                <h3 class="w3-center">-Scented Urine-</h3>
+                <img src="imgs/tiger-proud.jpg" class="w3-hover-sepia" alt="tiger looking away" style="width:40%">
+                <p class="scent-info">
+                    I had to save the most fascinating yet hilarious fact for the end of all this. Tiger urine smells like buttered popcorn. That is a very interesting smell to resemble. The urine smell also poses as a warning to intruders in their surroundings. (such an interesting comparison.)
+                </p>
+            </div>
+
+            <!-- Small Screens -->
+            <div class= "w3-panel w3-card-2 w3-yellow w3-hover-shadow w3-hide-large ">
+                <h3 class="w3-center w3-large ">-Patterned skin-</h3>
+                <img src=imgs/tiger-skin.jpg alt="tiger skin"  style="width:60%" class="w3-hover-sepia ">
+                <p class="w3-small">Image from <a href="https://twitter.com/dallaszoo/status/359783752915877889">Twitter</a> from the Dallas Zoo.</p>
+                <p class="w3-medium"> It is quite obvious that tigers have vibrant orange fur with black, slender stripes. However, did you know that their pattern is imprinted onto their skin as well? It's almost like a human's fingerprint which marks who they are. (Imagine being born with a "tattoo")</p>
+            </div>
+            <div class= "w3-panel w3-card-2 w3-yellow w3-hover-shadow w3-hide-large ">
+                <h3 class= "w3-center w3-large"> -Sanitizing Saliva-</h3>
+                <img src="imgs/tiger-mouthopening.jpg" style="width:80%" alt="tiger with mouth open" class="w3-hover-sepia ">
+                <p class="w3-medium">Something I found very fascinating about tigers is the fact they have antiseptic saliva. You read that right. Their saliva is almost like a disinfectant preventing the spread of bacteria. They usually lick themselves to prevent infection which is almost like healing powers in my opinion.</p>
+            </div>
+            <div class= "w3-panel w3-card-2 w3-yellow w3-hover-shadow w3-hide-large ">
+                <h3 class="w3-center w3-large">-Variety Diet-</h3>
+                <img src="imgs/tiger-eating.jpg" alt="tiger eating" class="w3-hover-sepia" style="width:80%">
+                <p class="w3-medium">Tigers are known to eat just about ANY animal. It does not matter if it's a bird, rhino, buffalo, or even another large wildcat. If they get in the tigers way, they will become deadmeat. (Literally)</p>
+            </div>
+            <div class= "w3-panel w3-card-2 w3-yellow w3-hover-shadow w3-hide-large ">
+                <h3 class="w3-center w3-large">-Vulnerable Little Cubs-</h3>
+                <img src="imgs/tiger-cub-withtiger.jpg" class="w3-hover-sepia" alt="tiger cub with parent" style="width:80%">
+                <p class="w3-medium">Unfortunately, all tiger cubs are born blind. Because of this, there are many cubs that do not survive. They are mainly relying on the scent of their mother to guide them but might end up dying of starvation or eaten by a male tiger for mating with the female. (Poor things!)</p>
+            </div>
+            <div class= "w3-panel w3-card-2 w3-yellow w3-hover-shadow w3-hide-large ">
+                <h3 class="w3-center w3-large">-Scented Urine-</h3>
+                <img src="imgs/tiger-proud.jpg" class="w3-hover-sepia" alt="tiger looking away" style="width:80%">
+                <p class="w3-medium">I had to save the most fascinating yet hilarious fact for the end of all this. Tiger urine smells like buttered popcorn. That is a very interesting smell to resemble. The urine smell also poses as a warning to intruders in their surroundings. (such an interesting comparison.)</p>
+            </div>
+        </div>        
+            
+        
+    <div class="sources">
+        <p><strong>Sources:</strong></p>
+        <p>“20 Amazing Facts about Tiger You Never Knew.” Latest Travel & Tourism News from Ranthambore National Park, 6 Dec. 2018, https://www.ranthamborenationalpark.com/blog/amazing-facts-about-tigers/. </p>
+    </div>
+    <!-- Nav Bar Animation -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Demo");
+            if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            } else { 
+            x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+</html>

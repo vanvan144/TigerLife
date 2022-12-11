@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <script src="https://kit.fontawesome.com/68076a1572.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+ <style>
+   @import url('https://fonts.googleapis.com/css?family=Pacifico');
+   @import url('https://fonts.googleapis.com/css?family=Antonio');
+    @import url('https://fonts.googleapis.com/css?family=Anybody');
+
+   * {
+     box-sizing: border-box;
+    }
+
+    .nav-header {
+      background: #FFA500;
+      height: 100px;
+     display: flex;
+    }
+
+    .nav-div {
+     margin: auto;
+     display: flex;
+      justify-content: center;
+    }
+
+   .nav-bar {
+      list-style-type: none;
+      display: flex;
+      margin-left: 200px;
+      margin-top: 30px;
+    }
+
+    .nav-bar-link {
+     color: white;
+     font-size: 30px;
+     padding: 10px;
+     margin-right: 18px;
+     font-family: "Antonio", serif;
+     text-decoration: none;
+   }
+
+    .website-title {
+     font-family: "Pacifico", sans-serif;
+     font-size: 39px;
+     margin-left: 40px;
+     font-weight: 300;
+     text-shadow: 2px 2px white;
+    }
+
+    body {
+      margin: 0;
+      text-align: center;
+      background-color: #FFFACD;
+    }
+
+    h2 {
+      font-family: "Pacifico", sans-serif;
+      font-size: 59px;
+      color: orange;
+      text-shadow: 2px 5px black;
+    }
+
+   i {
+      color: black;
+      text-shadow:none;
+    }
+
+    img {
+      border-radius: 25px;
+      border-width: 15px;
+     box-shadow: 5px 7px orange;
+   }
+
+   a {
+      color: orange;
+    }
+
+      
+
+    .w3-card-4 {
+     font-family: "Antonio", sans-serif;
+    }
+
+    .w3-container {
+      display: flex;
+     margin-left: 50px;
+   }
+
+    h3 {
+     font-family: "Anybody", sans-serif;
+    }
+
+    @media only screen and (max-width:500px ) {
+      
+      h2 {
+        font-size:30px;
+        text-shadow: 2px 2px black;
+      }
+      .w3-bar {
+                font-family: "Antonio", sans-serif;
+              font-size:25px;
+            }
+    }
+           
+            
+      
+
+
+  </style>
+</head>
+  <body>
+    <!-- Small Screen Nav Bar -->
+    <div class=" w3-hide-large">
+      <div class="w3-bar w3-orange ">
+          <div class="w3-dropdown-hover w3-hide-large ">
+              <button onclick="myFunction()" class="w3-padding-large w3-button w3-amber" title="paw"><i class="fa-solid fa-paw"></i></button>
+              <div id="Demo" class="w3-dropdown-content w3-bar-block w3-khaki w3-animate-zoom">
+                  <a href="about-me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">About Me</a>
+                  <a href="species.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Species</a>
+                  <a href="facts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Facts</a>
+                  <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Donate</a>
+                  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Contact</a>
+              </div>
+          </div> 
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      </div>
+  </div>
+
+    <!-- Large Screen Nav Bar -->
+    <div class="w3-hide-small">
+      <div class="nav-header">
+          <h1 class="website-title">TigerLife </h1>
+          <div class="nav-div">
+              <ul class="nav-bar">
+                  <li class="nav-bar-list"><a class="nav-bar-link" href="index.html">Home</a></li>
+                  <li class="nav-bar-list"><a class= "nav-bar-link" href="about-me.html">About Me</a></li>
+                  <li class="nav-bar-list"><a class="nav-bar-link" href="species.html">Species</a></li>
+                  <li class="nav-bar-list"><a class="nav-bar-link" href="facts.html">Facts</a></li>
+                  <li class="nav-bar-list"><a class="nav-bar-link" href="donate.html">Donate</a></li>
+                  <li class="nav-bar-list"><a class="nav-bar-link" href="contact.html">Contact Me</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!-- Content -->
+  <h2 class="w3-border-orange w3-hide-small">About me <i class="fa-solid fa-paw"></i></h2>
+  <div class="w3-container w3-xxlarge w3-hide-small">
+      <img class="w3-hover-sepia " src="imgs/my-pic.jpg" alt="my pic" style="width:40%">
+      <div class="w3-card-4 w3-panel w3-xlarge w3-hover-yellow w3-hover-shadow w3-margin-left" style="width:50%">
+        <header class=" w3-amber w3-animate-top w3-padding ">
+          <h3 class="w3-xxlarge" style="text-shadow:2px 2px 0 white">Vanessa Bilodeau</h3>
+        </header>
+        <p class="w3-dropdown-hover w3-medium">(Hover over this to see a cute tiger cub ) <span class="w3-dropdown-content w3-padding">
+            <img src="imgs/tiger-cub.jpg" alt="tiger cub">
+          </span>
+        </p>
+        <p class="w3-margin"> My name is Vanessa Bilodeau and I am the creator of this website. I am a freshman at UNH Manchester! I am majoring in Psychology. I have always loved tigers ever since I was little. I based my inspiration for this website from the <a href="https://www.nwf.org/" target="_blank">NWF's website.</a> There is a endangerment crisis going on with tigers. This website is here to educate others and make them aware of the issues at hand. Feel free to donate to the charity on this website! Save these Tigers! </p>
+      </div>
+    </div>
+    <!-- Small Screens -->
+    <h2 class="w3-border-orange w3-hide-large">About me <i class="fa-solid fa-paw"></i></h2>
+    <img class="w3-hover-sepia w3-margin-right w3-hide-large  " src="imgs/my-pic.jpg" alt="my pic" style="width:70%">
+    <div class="w3-card-4 w3-panel w3-medium w3-hide-large w3-hover-yellow w3-hover-shadow w3-margin-top">
+      <header class="w3-amber w3-animate-top w3-padding">
+        <h3 class="w3-medium" style="text-shadow: 1px 1px 0 white">Vanessa Bilodeau</h3>
+      </header>
+      <p class="w3-dropdown-hover w3-small">{Hover over this to see a cute tiger cub) <span class="w3-dropdown-content w3-padding">
+        <img src="imgs/tiger-cub.jpg" alt="tiger cub" style="width:80%">
+      </span>
+    </p>
+    <p class="w3-margin"> My name is Vanessa Bilodeau and I am the creator of this website. I am a freshman at UNH Manchester! I am majoring in Psychology. I have always loved tigers ever since I was little. I based my inspiration for this website from the <a href="https://www.nwf.org/" target="_blank">NWF's website.</a> There is a endangerment crisis going on with tigers. This website is here to educate others and make them aware of the issues at hand. Feel free to donate to the charity on this website! Save these Tigers! </p>
+    </div>
+
+  <!-- Nav Bar Animation -->
+    <script>
+      function myFunction() {
+          var x = document.getElementById("Demo");
+          if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          } else { 
+          x.className = x.className.replace(" w3-show", "");
+          }
+      }
+  </script>
+
+    
+    
+  </body>
+</html>

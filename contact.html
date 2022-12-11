@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/68076a1572.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Contact Me</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Pacifico');
+        @import url('https://fonts.googleapis.com/css?family=Antonio');
+        @import url('https://fonts.googleapis.com/css?family=Anybody');
+
+        * {
+            box-sizing: border-box;
+        }
+        .nav-header {
+            background:#FFA500;
+            height:100px;
+            display:flex; 
+            
+
+        }
+        .nav-div{
+            margin:auto;
+            display:flex;
+            justify-content: center;
+        }
+        .nav-bar {
+            list-style-type:none;
+            display:flex;
+            margin-left: 200px;
+            margin-top:30px;
+            
+          
+            
+        }
+        .nav-bar-link {
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            margin-right: 18px;
+            font-family: "Antonio", serif;
+            text-decoration: none;
+        }
+        .website-title {
+            font-family: "Pacifico", serif;
+            font-size: 39px;
+           margin-left:40px;
+           font-weight: 300;
+           text-shadow:2px 2px white;
+        }
+        body {
+            margin:0;
+            text-align:center;
+            background-color: #FFFACD;
+        }
+        h2 {
+            font-family: "Pacifico", sans-serif;
+            font-size:60px;
+            color: orange;
+            text-shadow: 2px 5px black;
+        }
+        i {
+            color:black;
+        }
+        .content {
+           display:flex;
+           justify-content:center;
+            
+        }
+        
+        .w3-card-4 {
+            font-family: "Anybody", sans-serif;
+            font-size:15px;
+        }
+    
+
+        @media only screen and (max-width:500px) {
+            .w3-bar {
+                font-family: "Antonio", sans-serif;
+               font-size:25px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <!-- Small Screen Nav Bar -->
+     <div class=" w3-hide-large">
+        <div class="w3-bar w3-orange ">
+            <div class="w3-dropdown-hover w3-hide-large">
+                <button onclick="myFunction()" class="w3-padding-large w3-button w3-amber" title="paw"><i class="fa-solid fa-paw"></i></button>
+                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-khaki w3-animate-zoom">
+                    <a href="about-me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">About Me</a>
+                    <a href="species.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Species</a>
+                    <a href="facts.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Facts</a>
+                    <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Donate</a>
+                    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Contact</a>
+                </div>
+            </div> 
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Home</a>
+        </div>
+    </div>
+    <!-- Large Screen Nav Bar -->
+    <div class="w3-hide-small">
+        <div class="nav-header">
+            <h1 class="website-title">TigerLife </h1>
+            <div class="nav-div">
+                <ul class="nav-bar">
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="index.html">Home</a></li>
+                    <li class="nav-bar-list"><a class= "nav-bar-link" href="about-me.html">About Me</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="species.html">Species</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="facts.html">Facts</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="donate.html">Donate</a></li>
+                    <li class="nav-bar-list"><a class="nav-bar-link" href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2>Contact Me <i class="fa-solid fa-paw"></i></h2>
+    <!-- Large Screen Content -->
+    <div class="content">
+        <img class="w3-hide-small" src="imgs/tiger-face.jpg" alt="tiger face" style="width:30%">
+        <div class=" w3-margin-left w3-card-4 w3-amber w3-border w3-hide-small">
+        
+            <form class="w3-container">
+                <p>
+                    <label>First Name</label>
+                    <input class="w3-input" type="text">
+                </p>
+            
+                <p>    
+                    <label>Last Name</label> 
+                    <input class="w3-input" type="text">
+                </p>
+
+                <p>    
+                    <label>Email Address</label> 
+                    <input class="w3-input" type="text">
+                </p>
+
+                <p>    
+                    <label>Questions or Comments</label> 
+                    <input class="w3-input" type="text">
+                </p>
+                <button class="w3-btn w3-black w3-round-large">Submit</button>
+            </form>
+        </div>
+    </div>
+    <h3 class="w3-hide-small">OR </h3>
+    <div class="socials">
+        <p class="w3-hide-small"><i class="fa-solid fa-envelope"></i>: <a href="mailto:vmb1027@usnh.edu" target="_blank">vmb1027@usnh.edu</a></p>
+        <p class="w3-hide-small"><i class="fa-brands fa-instagram"></i>: <a href="https://www.instagram.com/vanessa.b133/?next=%2F" target="_blank">vanessa.b133</a></p>
+    </div>
+    <!-- Small Screen Content -->
+    <img class="w3-hide-large" src="imgs/tiger-face.jpg" alt="tiger face" style="width:70%">
+    <div class=" w3-margin-left w3-card-4 w3-amber w3-border w3-hide-large w3-margin-top">
+        
+        <form class="w3-container">
+            <p>
+                <label>First Name</label>
+                <input class="w3-input" type="text">
+            </p>
+            
+            <p>    
+                <label>Last Name</label> 
+                <input class="w3-input" type="text">
+            </p>
+
+            <p>    
+                <label>Email Address</label> 
+                <input class="w3-input" type="text">
+            </p>
+
+            <p>    
+                <label>Questions or Comments</label> 
+                <input class="w3-input" type="text">
+            </p>
+            <button class="w3-btn w3-black w3-round-large">Submit</button>
+        </form>
+    </div>
+   
+   
+    <!-- Nav Bar Animation -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Demo");
+            if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            } else { 
+            x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    
+</body>
+</html>
+
